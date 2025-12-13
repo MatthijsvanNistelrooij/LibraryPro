@@ -1,0 +1,20 @@
+[
+  { "id": "bass1", "name": "Bass 1", "file": "/assets/samples/bass1.wav" },
+  { "id": "bass2", "name": "Bass 2", "file": "/assets/samples/bass2.wav" },
+  { "id": "bass3", "name": "Bass 3", "file": "/assets/samples/bass3.wav" },
+  { "id": "bleep1", "name": "Bleep 1", "file": "/assets/samples/bleep1.wav" },
+  { "id": "bleep2", "name": "Bleep 2", "file": "/assets/samples/bleep2.wav" },
+  { "id": "hihat1", "name": "Hi Hat 1", "file": "/assets/samples/hihat1.wav" },
+  { "id": "hihat2", "name": "Hi Hat 2", "file": "/assets/samples/hihat2.wav" },
+  { "id": "hihat3", "name": "Hi Hat 3", "file": "/assets/samples/hihat3.wav" },
+  { "id": "hihat4", "name": "Hi Hat 4", "file": "/assets/samples/hihat4.wav" },
+  { "id": "kick1", "name": "Kick 1", "file": "/assets/samples/kick1.wav" },
+  { "id": "kick2", "name": "Kick 2", "file": "/assets/samples/kick2.wav" },
+  { "id": "kick3", "name": "Kick 3", "file": "/assets/samples/kick3.wav" },
+  { "id": "snare1", "name": "Snare 1", "file": "/assets/samples/snare1.wav" },
+  { "id": "snare2", "name": "Snare 2", "file": "/assets/samples/snare2.wav" },
+  { "id": "snare3", "name": "Snare 3", "file": "/assets/samples/snare3.wav" },
+  { "id": "snare4", "name": "Snare 4", "file": "/assets/samples/snare4.wav" },
+  { "id": "snare5", "name": "Snare 5", "file": "/assets/samples/snare5.wav" },
+  { "id": "snare6", "name": "Snare 6", "file": "/assets/samples/snare6.wav" }
+]

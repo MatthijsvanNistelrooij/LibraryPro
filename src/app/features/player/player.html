@@ -1,0 +1,37 @@
+<div class="player">
+
+  <div class="controls">
+    <button class="play-btn" (click)="togglePlay()">
+      {{ isPlaying() ? '❚❚' : '▶' }}
+    </button>
+
+    <button class="stop-btn" (click)="stop()">⏹ </button>
+
+  </div>
+
+  <div class="settings">
+    <div class="bpm">
+      <label for="bpm">BPM</label>
+      <input
+        id="bpm"
+        type="number"
+        [value]="bpm()"
+        (input)="setBpm($any($event.target).valueAsNumber)"
+      />
+    </div>
+
+    <div class="volume">
+      <label for="volume">Volume</label>
+      <input
+        id="volume"
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        [value]="audio.volume()"
+        (input)="audio.volume.set($any($event.target).valueAsNumber)"
+      />
+    </div>
+  </div>
+
+</div>

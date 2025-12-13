@@ -1,0 +1,25 @@
+<div class="sequencer">
+  @for (track of tracks(); track track.id) {
+  <div class="track-row">
+    <select
+      [value]="track.sampleId"
+      (change)="setSample(track.id, $any($event.target).value)"
+    >
+      @for (sample of samples(); track sample.id) {
+      <option [value]="sample.id">{{ sample.name }}</option>
+      }
+    </select>
+
+    <div class="steps">
+      @for (step of track.steps; let i = $index; track i) {
+      <div
+        class="step"
+        [class.active]="step.active"
+        [class.playing]="i === currentStep()"
+        (click)="seq.toggleStep(track.id, i)"
+      ></div>
+      }
+    </div>
+  </div>
+  }
+</div>
