@@ -28,7 +28,6 @@ export class AudioEngineService {
     this.buffers.set(sample.id, buffer);
   }
 
-  /** Play a loaded sample */
   play(sampleId: string) {
     const buffer = this.buffers.get(sampleId);
     if (!buffer) return;
@@ -39,7 +38,6 @@ export class AudioEngineService {
     source.start();
   }
 
-  /** Resume context if suspended (user gesture required) */
   async resume() {
     if (this.ctx.state === 'suspended') {
       await this.ctx.resume();
